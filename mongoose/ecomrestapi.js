@@ -2,6 +2,7 @@ const express = require('express');
 const Product_data = require('./ecom');
 const app = express();
 app.use(express.json());
+
 // post api
 app.post('/createdata', async(req, res) => {
     const data = new Product_data(req.body);
